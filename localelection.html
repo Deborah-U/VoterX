@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>VoterX</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <h1>Upcoming Local Competition</h1>
+    <h5>Select which election you plan on participating in and want candidate recomendations for.</h5>
+
+    <!--<button id = "sbtn" class = "button1">Select/Deselect all</button>-->
+  
+    <div class = "rep-container">
+      <div class="rep-row">
+        <div class = "rep column1">
+          <h1 style = "color: #405E8C;">U.S. House of Rep</h1>
+          <div class = "HoR" onclick = "">
+            <input type="checkbox" id="selectHoR" name="check1">
+          </div>
+        </div>
+
+        <div class = "rep column1">
+          <h1 style = "color: #405E8C;">City Council</h1>
+          <div class = "CC" onclick = "">
+            <input type="checkbox" id="selectCC" name="check2">
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class = "rep-row">
+        <div class = "rep column1">
+          <h1 style = "color: #405E8C;">U.S. Senator</h1>
+          <div class = "USS" onclick = "">
+            <input type="checkbox" id="selectUSS" name="check3">
+          </div>
+        </div>
+
+        <div class = "rep column1">
+          <h1 style = "color: #405E8C;">Mayoral Elections</h1>
+          <div class = "ME" onclick = "">
+            <input type="checkbox" id="selectME" name="check4">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <p>Please select at least one election.</p>
+    <a href = "profilebuilder.html" class = "button1">Get Recommendations</a>
+
+  </body>
+
+
+</html>

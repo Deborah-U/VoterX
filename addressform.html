@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>VoterX</title>
+    <link href="addressform.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+    
+    <h1>Enter Your Address</h2>
+
+    <input id="autocomplete" placeholder="Enter your address" onFocus="geolocate()" type="text">
+
+    <div class="row form1">
+      <div>
+        <label >Street address</label>
+        <input id="street_number" disabled="true" onlick = "street()">
+      </div>
+
+      <div>
+        <label>City</label>
+        <input id="locality" disabled="true">
+      </div>
+
+      <div> 
+        <label>State</label>
+        <input id="administrative_area_level_1" disabled="true">
+      </div>
+
+      <div>
+        <label>Zip code</label>
+        <input id="postal_code" disabled="true">
+      </div>
+
+      <div>
+        <label>Country</label>
+        <input id="country" disabled="true">
+      </div>
+
+    </div><br><br>
+    <form action="searching.html" method="get">
+      <input type="submit" class = "button1" value="Submit">
+    </form>
+
+  </body>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXVsUYmGjCiD9ehXd25XvCqLF8AzyLCRY&libraries=places&callback=initAutocomplete" async defer></script>
+
+</html>
+
+
+<!-- must reference in devpost: https://www.solodev.com/blog/web-design/adding-an-auto-complete-address-field-to-your-forms.stml -->
